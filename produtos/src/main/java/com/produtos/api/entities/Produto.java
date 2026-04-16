@@ -1,4 +1,4 @@
-package produtos_produtos.entities;
+package com.produtos.api.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class ProdutoEntity {
+public class Produto {
 	@Id
 	@GeneratedValue(strategy =GenerationType.IDENTITY)
 	
@@ -16,10 +16,10 @@ public class ProdutoEntity {
 	private double preco;
 	private Integer qtd;
 	
-	public ProdutoEntity() {
+	public Produto() {
 	}
 	
-	public ProdutoEntity(Integer id, String nome, String descricao, double preco, Integer qtd) {
+	public Produto(Integer id, String nome, String descricao, double preco, Integer qtd) {
 		super();
 		this.id = id;
 		this.nome = nome;
