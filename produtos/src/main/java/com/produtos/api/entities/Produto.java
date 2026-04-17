@@ -13,13 +13,13 @@ public class Produto {
 	private Integer id;
 	private String nome;
 	private String descricao;
-	private double preco;
+	private Double preco;
 	private Integer qtd;
 	
 	public Produto() {
 	}
 	
-	public Produto(Integer id, String nome, String descricao, double preco, Integer qtd) {
+	public Produto(Integer id, String nome, String descricao, Double preco, Integer qtd) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -52,11 +52,11 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-	public double getPreco() {
+	public Double getPreco() {
 		return preco;
 	}
 
-	public void setPreco(double preco) {
+	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
 
